@@ -1,0 +1,37 @@
+POST http://[::1]:3000/videos
+Content-Type: application/json
+
+{
+    "title": "New Video",
+    "description": "This is a new video description",
+    "url": "http://example.com/video.mp4",
+    "thumbnail": "http://example.com/thumbnail.jpg",
+    "duration": 120,
+    "views": 0,
+    "likes": 0,
+    "dislikes": 0,
+    "comments": []
+}
+
+###
+
+GET http://[::1]:3000/videos
+Accept: application/json
+
+###
+
+GET http://[::1]:3000/videos?search=Updated
+
+###
+
+PUT http://[::1]:3000/videos/1a8f6cac-106e-4f83-b5bb-a0c295353078
+Content-Type: application/json
+
+{
+    "title": "Video Title Updated",
+    "description": "This is an updated description",
+    "duration": 220
+}
+
+###
+DELETE http://[::1]:3000/videos/1a8f6cac-106e-4f83-b5bb-a0c295353078
