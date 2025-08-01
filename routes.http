@@ -15,7 +15,7 @@ Content-Type: application/json
 
 ###
 
-GET http://[::1]:3000/videos
+GET http://0.0.0.0:3000/videos
 Accept: application/json
 
 ###
@@ -24,7 +24,7 @@ GET http://[::1]:3000/videos?search=Updated
 
 ###
 
-PUT http://[::1]:3000/videos/1a8f6cac-106e-4f83-b5bb-a0c295353078
+PUT http://[::1]:3000/videos/2
 Content-Type: application/json
 
 {
